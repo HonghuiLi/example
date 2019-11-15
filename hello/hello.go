@@ -20,8 +20,11 @@ import (
 	"fmt"
 
 	"github.com/golang/example/stringutil"
+	"github.com/gorilla/mux"
 )
 
 func main() {
 	fmt.Println(stringutil.Reverse("!selpmaxe oG ,olleH"))
+	
+	router := mux.NewRouter().StrictSlash(true)
 }
